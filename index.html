@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Color-Box</title>
   </head>
+
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What's Your Name?"
-      />
-      <input type="submit" value="Log In" />
+    <h1>The Best Color</h1>
+    <form class="first-line">
+      <div>
+        <span id="font-area">
+          <h2>Tomato</h2>
+          <h4>#FF6347</h4>
+        </span>
+      </div>
+      <div>
+        <span id="font-area">
+          <h2>Teal</h2>
+          <h4>#008080</h4>
+        </span>
+      </div>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    <form class="last-line">
+      <div>
+        <span id="font-area">
+          <h2>Burlywood</h2>
+          <h4>#DEB887</h4>
+        </span>
+      </div>
+      <div>
+        <span id="font-area">
+          <h2>Thistle</h2>
+          <h4>#D7DFD7</h4>
+        </span>
+      </div>
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <script src="js/backgrounds.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/greeting.js"></script>
   </body>
 </html>
