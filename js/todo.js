@@ -6,8 +6,6 @@ const TO_DOS_KEY = "toDos";
 
 const toDos = [];
 
-const savedToDos = localStorage.getItem(TO_DOS_KEY);
-
 function saveToDos() {
   localStorage.setItem(TO_DOS_KEY, JSON.stringify(toDos));
   JSON.parse(localStorage.getItem);
@@ -47,3 +45,5 @@ if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
   console.log(parsedToDos);
 }
+
+const savedToDos = localStorage.getItem(TO_DOS_KEY);
