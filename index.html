@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum App</title>
+    <title>My-PlayList</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What's Your Name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div class="playlist__header">
+      <i class="fas fa-times"></i>
+      <span>PLAYLIST</span>
+      <div id="air-space"></div>
     </div>
-    <script src="js/backgrounds.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/greeting.js"></script>
+    <div class="main-music-area">
+      <div class="main-music-area__img">
+        <i class="far fa-image fa-2x"></i>
+      </div>
+      <div class="main-music-area__text">
+        <span class="main-music-area__song-name">Random Love</span>
+        <span class="main-music-area__author">by Divay Kapoor</span>
+      </div>
+    </div>
+    <div class="button-area">
+      <div class="button-area__one">
+        <i class="fas fa-play-circle"></i>
+        <span>PLAY</span>
+      </div>
+      <div class="button-area__two">
+        <div><i class="far fa-heart"></i></div>
+        <div><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+    <div class="sub-music-area">
+      <div class="big-box-divider">
+        <div class="color-box"></div>
+        <div class="text-box-divider">
+          <span class="text-box">Matargasti</span>
+          <span class="singer">Mohit chauhan</span>
+        </div>
+      </div>
+      <div class="big-box-divider">
+        <div class="color-box"></div>
+        <div class="text-box-divider">
+          <span class="text-box">Attitude</span>
+          <span class="singer">Lewis OfMan|Attitude</span>
+        </div>
+      </div>
+      <div class="big-box-divider">
+        <div class="color-box"></div>
+        <div class="text-box-divider">
+          <span class="text-box">Try Everything</span>
+          <span class="singer">Shakira|Zootopia</span>
+        </div>
+      </div>
+      <div class="big-box-divider">
+        <div class="color-box"></div>
+        <div class="text-box-divider">
+          <span class="text-box">Sunflower</span>
+          <span class="singer">Joseph Vincent|Sunflower</span>
+        </div>
+      </div>
+    </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
