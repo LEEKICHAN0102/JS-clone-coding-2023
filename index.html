@@ -5,60 +5,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My-PlayList</title>
+    <title>Daily-Book</title>
   </head>
+
   <body>
-    <div class="playlist__header">
-      <i class="fas fa-times"></i>
-      <span>PLAYLIST</span>
-      <div id="air-space"></div>
-    </div>
-    <div class="main-music-area">
-      <div class="main-music-area__img">
-        <i class="far fa-image fa-2x"></i>
-      </div>
-      <div class="main-music-area__text">
-        <span class="main-music-area__song-name">Random Love</span>
-        <span class="main-music-area__author">by Divay Kapoor</span>
-      </div>
-    </div>
-    <div class="button-area">
-      <div class="button-area__one">
-        <i class="fas fa-play-circle"></i>
-        <span>PLAY</span>
-      </div>
-      <div class="button-area__two">
-        <div><i class="far fa-heart"></i></div>
-        <div><i class="fas fa-plus"></i></div>
-      </div>
-    </div>
-    <div class="sub-music-area">
-      <div class="big-box-divider">
-        <div class="color-box"></div>
-        <div class="text-box-divider">
-          <span class="text-box">Matargasti</span>
-          <span class="singer">Mohit chauhan</span>
+    <div class="real-main">
+      <div class="yellow-screen">
+        <div class="library-main-header-bar">
+          <i class="fas fa-bars"></i>
+          <h2>library</h2>
+          <i class="fas fa-shopping-bag"></i>
         </div>
+        <input
+          class="search"
+          type="text"
+          placeholder="Search Books... &#xf002;"
+        />
       </div>
-      <div class="big-box-divider">
-        <div class="color-box"></div>
-        <div class="text-box-divider">
-          <span class="text-box">Attitude</span>
-          <span class="singer">Lewis OfMan|Attitude</span>
+      <div class="main-screen">
+        <h2 id="day-book-header">Book of the day</h2>
+        <div class="day-book">
+          <img src="screenshot/01.jpg" />
+          <div class="text-and-button">
+            <h3>No Fixed Abode</h3>
+            <span>Journey Through</span>
+            <div class="all-books-star-point">
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+              <i class="fas fa-star fa-xs"></i>
+            </div>
+            <div class="day-book-button-first">
+              <div>Journey</div>
+              <div>Biography</div>
+            </div>
+            <div class="day-book-button-second">
+              <div class="circle"><i class="fas fa-bookmark fa-xs"></i></div>
+              <div class="only-black">Book now</div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="big-box-divider">
-        <div class="color-box"></div>
-        <div class="text-box-divider">
-          <span class="text-box">Try Everything</span>
-          <span class="singer">Shakira|Zootopia</span>
+        <h2>Top Adventures</h2>
+        <div class="top-book">
+          <img src="screenshot/02.jpg" />
+          <img src="screenshot/03.jpg" />
+          <img src="screenshot/04.jpg" />
         </div>
-      </div>
-      <div class="big-box-divider">
-        <div class="color-box"></div>
-        <div class="text-box-divider">
-          <span class="text-box">Sunflower</span>
-          <span class="singer">Joseph Vincent|Sunflower</span>
+        <div class="starcraft">
+          <div class="all-books-star-point">
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+          </div>
+          <div class="all-books-star-point">
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+          </div>
+          <div class="all-books-star-point">
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+            <i class="fas fa-star fa-xs"></i>
+          </div>
+        </div>
+        <h2>Popular Authors</h2>
+        <div class="author">
+          <img src="screenshot/05.jpg" />
+          <div class="author-text-zone">
+            <h3>Nicolas</h3>
+            <h3>Serrano Arevalo</h3>
+            <span
+              >How about 7pixel? ...too much...maybe 6?... or maybe 5?...
+              boo-yah! very good~! I like this ~~ See you on the next one...
+              bye~bye!
+            </span>
+          </div>
         </div>
       </div>
     </div>
