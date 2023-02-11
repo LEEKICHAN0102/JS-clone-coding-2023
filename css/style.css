@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 body {
   height: 100vh;
   background-color: rgb(237, 233, 233);
   display: flex;
   justify-content: center;
+  font-family: nunito;
   align-items: center;
 }
-
 .screen-divider {
   width: 600px;
   height: 450px;
@@ -20,36 +22,6 @@ body {
   width: 250px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 4px rgb(161, 158, 158);
-}
-
-.left-screen__btn {
-  display: flex;
-  margin-top: 5px;
-  justify-content: space-evenly;
-}
-
-.left-screen__btn span {
-}
-
-.black_btn {
-  width: 70px;
-  height: 30px;
-  background-color: black;
-  border-radius: 15px;
-}
-.black_btn span {
-  color: white;
-  font-size: small;
-}
-
-.white_btn {
-  width: 70px;
-  height: 30px;
-  background-color: gray;
-  border-radius: 15px;
-}
-.white_btn span {
-  font-size: small;
 }
 
 /* Left-Screen-Part */
@@ -71,7 +43,142 @@ body {
   box-shadow: 0px 2px 5px 2px #ec4848;
 }
 
-.left-screen__song-info {
+.left-screen__btn {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-evenly;
+}
+
+.left-screen__btn div {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black_btn {
+  width: 70px;
+  height: 30px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.black_btn span {
+  color: white;
+}
+
+.white_btn {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(211, 201, 201);
+  border-radius: 15px;
+}
+
+.white_btn i {
+  margin-right: 3px;
+}
+
+.left-screen__bottom {
+  display: flex;
+  margin: -5px 5px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.left-screen__bottom__text {
+  width: 90%;
+  height: 35px;
+  background-color: black;
+  font-size: 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-screen__bottom__text span {
+  margin-left: 20px;
+  color: white;
+}
+
+.left-screen__bottom__icons {
+  background-color: black;
+  font-size: small;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.left-screen__bottom__icons i {
+  margin-right: 20px;
+}
+
+.divider {
+  display: flex;
+}
+
+.song-box i {
+  position: absolute;
+  margin: 10.5px;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.song-box :nth-child(2) {
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.left-screen__song-list {
+  margin: 10px 20px;
+}
+
+.left-screen__song-list i {
+  font-size: 1px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.left-screen__song-list :nth-child(2).divider {
+  width: 100%;
+  height: 35px;
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+
+.left-screen__song-list img {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.left-screen__song-list-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.icon-divider {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singer-name {
+  font-size: 1px;
+  opacity: 0.5;
+}
+
+.song-name {
+  font-weight: 600;
+  font-size: 2px;
 }
 
 /* Right-Screen-Part */
@@ -94,27 +201,6 @@ body {
   box-shadow: 0px 3px 8px 3px #ec4848;
 }
 
-.song-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.song-info span {
-  margin-bottom: 10px;
-}
-
-.big-name {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.small-name {
-  opacity: 0.5;
-  font-size: 1px;
-}
-
 .right-screen__time {
   display: flex;
   justify-content: space-between;
@@ -127,8 +213,34 @@ body {
 }
 
 .time-range {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
+.black-zone {
+  width: 55%;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.black-circle {
+  width: 4%;
+  height: 10px;
+  margin: -2px;
+  margin-left: 59px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.gray-zone {
+  width: 30%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(164, 162, 162);
+}
 .right-screen__icons {
   display: flex;
   justify-content: space-between;
@@ -154,4 +266,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: -10px;
+}
+
+/* Both-part */
+.big-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.small-name {
+  opacity: 0.5;
+  font-size: 1px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
 }
