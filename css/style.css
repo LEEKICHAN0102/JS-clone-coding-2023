@@ -1,5 +1,5 @@
 .hidden {
-  display: none;
+  display:none;
 }
 
 img {
@@ -13,3 +13,5 @@ img {
   z-index: -1;
   opacity: 80%;
 }
+
+/* Today's My Rest day */
